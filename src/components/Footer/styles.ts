@@ -19,7 +19,7 @@ export const Links = styled.ul`
 export const Link = styled.a`
   color: ${cores.cinzaClaro};
   text-decoration: none;
-  margin-right: 28px;
+  margin-right: 24px;
 `
 
 export const FooterSection = styled.div`
