@@ -10,12 +10,13 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 
   &::after {
     position: absolute;
     background-color: #000;
     width: 100%;
-    height: 88.5%;
+    height: 100%;
     top: 0;
     left: 0;
     content: '';

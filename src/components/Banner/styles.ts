@@ -16,7 +16,7 @@ export const Imagem = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    z-index: 1;
+    z-index: 2;
   }
 
   ${TagContainer} {
@@ -32,6 +32,7 @@ export const Imagem = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     content: '';
+    z-index: 1;
   }
 `
 export const Titulo = styled.h2`
