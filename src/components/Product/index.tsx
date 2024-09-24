@@ -1,4 +1,3 @@
-import { exitCode } from 'process'
 import Tag from '../Tag'
 
 import { Card, Descricao, Titulo, Infos } from './styles'

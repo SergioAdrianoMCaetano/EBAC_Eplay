@@ -5,26 +5,24 @@ import Section from '../Section'
 import { Item, Items, Action, Modal, ModelContent } from './styles'
 import { GalleryItems } from '../../pages/Home'
 
-import spiderMan from '../../assets/images/banner-homem-aranha.png'
-import hogwarts from '../../assets/images/fundo_hogwarts.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import fechar from '../../assets/images/fechar.png'
 
-const mock: GalleryItems[] = [
-  {
-    type: 'image',
-    url: spiderMan
-  },
-  {
-    type: 'image',
-    url: hogwarts
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/E69tKrfEQag?si=7kuORamcjYN8m05H'
-  }
-]
+// const mock: GalleryItems[] = [
+//   {
+//     type: 'image',
+//     url: spiderMan
+//   },
+//   {
+//     type: 'image',
+//     url: hogwarts
+//   },
+//   {
+//     type: 'video',
+//     url: 'https://www.youtube.com/embed/E69tKrfEQag?si=7kuORamcjYN8m05H'
+//   }
+// ]
 
 type Props = {
   defaultCover: string
