@@ -8,7 +8,7 @@ import { formataPreco } from '../ProductList'
 import { useGetFeaturedGameQuery } from '../../service/api'
 
 const Banner = () => {
-  const { data: game, isLoading } = useGetFeaturedGameQuery()
+  const { data: game } = useGetFeaturedGameQuery()
 
   if (!game) {
     return <h3>Loading...</h3>

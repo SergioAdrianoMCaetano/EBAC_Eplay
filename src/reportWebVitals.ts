@@ -1,15 +1,32 @@
-import { ReportHandler } from 'web-vitals'
+type MetricType = {
+  name: string
+  value: number
+  delta: number
+  id: string
+}
 
-const reportWebVitals = (onPerfEntry?: ReportHandler) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const reportWebVitals = (onPerfEntry?: (metric: MetricType) => void) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry)
-      getFID(onPerfEntry)
-      getFCP(onPerfEntry)
-      getLCP(onPerfEntry)
-      getTTFB(onPerfEntry)
+    import('web-vitals').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
+      onCLS(onPerfEntry)
+      onFID(onPerfEntry)
+      onFCP(onPerfEntry)
+      onLCP(onPerfEntry)
+      onTTFB(onPerfEntry)
     })
   }
 }
 
-export default reportWebVitals
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// const reportWebVitals = (onPerfEntry?: (metric: unknown) => void) => {
+//   if (onPerfEntry && onPerfEntry instanceof Function) {
+//     import('web-vitals').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
+//       onCLS(onPerfEntry)
+//       onFID(onPerfEntry)
+//       onFCP(onPerfEntry)
+//       onLCP(onPerfEntry)
+//       onTTFB(onPerfEntry)
+//     })
+//   }
+// }
