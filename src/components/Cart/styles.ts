@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { cores, breakpoints } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 import { ButtonContainer } from '../Button/styles'
 import fechar from '../../assets/images/fechar.png'
@@ -38,6 +38,19 @@ export const SideBar = styled.aside`
     max-width: 100%;
     width: 100%;
   }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 300px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 250px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    max-width: 200px;
+    padding: 20px 8px 0 8px;
+  }
 `
 export const Prices = styled.p`
   font-weight: bold;
@@ -50,6 +63,22 @@ export const Prices = styled.p`
     font-size: 12px;
     color: ${cores.cinzaClaro};
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 12px;
+
+    span {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 10px;
+
+    span {
+      font-size: 8px;
+    }
+  }
 `
 
 export const Quantity = styled.p`
@@ -58,6 +87,14 @@ export const Quantity = styled.p`
   color: ${cores.branca};
   margin-top: 32px;
   margin-bottom: 16px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 14px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 12px;
+  }
 `
 export const CartItem = styled.li`
   display: flex;
@@ -70,12 +107,32 @@ export const CartItem = styled.li`
     height: 80px;
     object-fit: cover;
     margin-right: 24px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 60px;
+      height: 60px;
+      margin-right: 16px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
   }
 
   h3 {
     color: ${cores.branca};
     font-weight: bold;
     font-size: 16px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 14px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 12px;
+    }
   }
 
   span {
@@ -83,12 +140,32 @@ export const CartItem = styled.li`
     color: ${cores.branca};
     font-weight: bold;
     font-size: 14px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 12px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 10px;
+    }
   }
 
   ${TagContainer} {
     margin-right: 8px;
     margin-top: 8px;
     margin-bottom: 16px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-right: 6px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      margin-right: 4px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
   }
 
   button {
@@ -101,5 +178,15 @@ export const CartItem = styled.li`
     top: 8px;
     right: 0;
     cursor: pointer;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 14px;
+      height: 14px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 12px;
+      height: 12px;
+    }
   }
 `

@@ -28,6 +28,10 @@ export const List = styled.ul`
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const Title = styled.h2`

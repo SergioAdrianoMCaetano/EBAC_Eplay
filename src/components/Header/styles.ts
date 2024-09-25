@@ -21,21 +21,69 @@ export const HeaderBar = styled.header`
     align-items: center;
   }
 
+  @media (max-width: ${breakpoints.desktop}) {
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
-    display: none;
+    padding: 16px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 12px;
+    margin-bottom: 20px;
   }
 `
 export const Links = styled.ul`
   display: flex;
-  margin-left: 40px;
+  margin-left: auto;
+  gap: 8px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    gap: 6px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    gap: 4px;
+  }
 `
 export const LinkItem = styled.li`
   margin-right: 16px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-right: 12px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-right: 8px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-right: 4px;
+  }
 `
 export const CartButton = styled.a`
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     margin-left: 16px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      margin-left: 12px;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-left: 8px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      margin-left: 4px;
+    }
   }
 `

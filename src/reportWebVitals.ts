@@ -18,6 +18,9 @@ const reportWebVitals = (onPerfEntry?: (metric: MetricType) => void) => {
   }
 }
 
+// Adicione esta linha para tornar o arquivo um módulo
+export {}
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // const reportWebVitals = (onPerfEntry?: (metric: unknown) => void) => {
 //   if (onPerfEntry && onPerfEntry instanceof Function) {

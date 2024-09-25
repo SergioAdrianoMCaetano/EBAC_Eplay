@@ -10,7 +10,8 @@ export const cores = {
 
 export const breakpoints = {
   desktop: '1024px',
-  tablet: '768px'
+  tablet: '768px',
+  mobile: '425px'
 }
 
 export const GlobaCSS = createGlobalStyle`
@@ -35,6 +36,11 @@ export const GlobaCSS = createGlobalStyle`
 
     @media (max-width: ${breakpoints.desktop}) {
       max-width: 80%;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      max-width: 100%;
+      padding: 0 10px;
     }
   }
 `
