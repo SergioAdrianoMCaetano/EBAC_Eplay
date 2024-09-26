@@ -112,11 +112,13 @@ export const CartItem = styled.li`
       width: 60px;
       height: 60px;
       margin-right: 16px;
+      object-fit: cover;
     }
 
     @media (max-width: ${breakpoints.mobile}) {
       width: 40px;
       height: 40px;
+      object-fit: cover;
       margin-right: 8px;
     }
   }

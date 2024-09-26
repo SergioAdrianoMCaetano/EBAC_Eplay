@@ -98,10 +98,12 @@ export const Precos = styled.p`
 
   @media (max-width: ${breakpoints.desktop}) {
     font-size: 22px;
+    padding: 32px;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 20px;
+    padding: 32px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {

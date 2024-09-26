@@ -30,12 +30,15 @@ export const HeaderBar = styled.header`
     padding: 16px;
     margin-bottom: 40px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 8px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 12px;
     margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 `
 export const Links = styled.ul`
@@ -60,10 +63,12 @@ export const LinkItem = styled.li`
 
   @media (max-width: ${breakpoints.tablet}) {
     margin-right: 8px;
+    padding: 8px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     margin-right: 4px;
+    padding: 8px;
   }
 `
 export const CartButton = styled.a`
