@@ -4,13 +4,18 @@ import Section from '../../components/Section'
 
 import { useParams } from 'react-router-dom'
 import { useGetGameQuery } from '../../service/api'
+import Loader from '../../components/Loader'
+
+type GameParams = {
+  id: string
+}
 
 const Product = () => {
-  const { id } = useParams()
-  const { data: game } = useGetGameQuery(id!)
+  const { id } = useParams() as GameParams
+  const { data: game } = useGetGameQuery(id)
 
   if (!game) {
-    return <h3>Loading...</h3>
+    return <Loader />
   }
 
   const languages = Array.isArray(game.details.languages)

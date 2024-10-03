@@ -21,6 +21,7 @@ export const Action = styled.div`
 
 export const Item = styled.li`
   position: relative;
+  cursor: zoom-in;
 
   > img {
     border: solid 2px;
@@ -70,11 +71,17 @@ export const ModelContent = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
-  }
 
-  h4 {
-    font-size: 18px;
-    font-weight: bold;
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    img {
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
+    }
   }
 
   > img {

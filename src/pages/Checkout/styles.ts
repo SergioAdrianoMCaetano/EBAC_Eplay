@@ -27,7 +27,7 @@ export const InputGroup = styled.div<InputGroupProps>`
   label {
     font-size: 14px;
     margin-bottom: 8px;
-    display: block; /* Garante que o label ocupe uma linha inteira */
+    display: block;
   }
 
   input,
@@ -37,7 +37,11 @@ export const InputGroup = styled.div<InputGroupProps>`
     height: 32px;
     padding: 0 8px;
     width: 100%;
-    display: block; /* Garante que o input e select ocupem uma linha inteira */
+    display: block;
+
+    &.error {
+      border: 2px solid red;
+    }
   }
 `
 export const TabButton = styled.button<TabButtonProps>`

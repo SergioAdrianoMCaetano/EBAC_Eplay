@@ -4,7 +4,7 @@ import { Game } from '../../pages/Home'
 import Button from '../Button'
 import Tag from '../Tag'
 
-import { formataPreco } from '../ProductList'
+import { formataPreco } from '../../util'
 
 import { Banner, Infos } from './styles'
 
